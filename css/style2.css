@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+	background-color: gray;
+}
+
+#header1, #footer1{
+	background: linear-gradient(to top, #000000, #1a1a1a);
+}
+
+#imgPerfil{
+	width: 75%;
+	height: auto;
+}
+
+#circuloPerfil{
+	width: 25%;
+	height: 25%;	
+}
+
+.test{
+	border: red solid 1px;
+}
