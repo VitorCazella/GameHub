@@ -17,7 +17,7 @@
 	<body>
 		<header>
 			<div class="container-fluid" id="header1">
-				<div class="row text-white text-center">
+				<div class="row text-white text-center" style="border-bottom: 3px solid green;">
 						<div class="col-md-1 border rounded-circle px-2 py-2 mx-4 my-4" style="background: white;">
 							<img class="rounded" src="img/white-controller.png" style="width: 103%;height: auto;" alt="">
 						</div>
@@ -25,42 +25,19 @@
 							<h1>GameHUB</h1>
 						</div>
 						<div class="col-md-3">
-							<div class="dropdown float-left pt-5 pr-4">
-							<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								User
-							</button>
-							<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-								<a class="dropdown-item" href="#">Perfil</a>
-								<a class="dropdown-item" href="#">Sobre</a>
-								<a class="dropdown-item" href="#">Sair</a>
-							</div>
-							<div id="circuloPerfil" class="float-right">
-								<img id="imgPerfil" class="rounded img-thumbnail" src="img/perfil.png" alt="">
-							</div>
-						</div>
+							
 						</div>
 				</div>
 			</div>
 		</header>	
-			<div class="container-fluid" style="border-bottom: 3px solid green;border-top: 3px solid green;">
-				<ul class="nav nav-tabs justify-content-center nav-fill">
-					<li class="nav-item">
-							<a href="index.html" class="nav-link active">Menu</a>	
-					</li>
-					<li class="nav-item">
-							<a href="paginas/csgo.html" class="nav-link">Notícias</a>	
-					</li>
-					<li class="nav-item">
-							<a href="paginas/fortnite.html" class="nav-link">Trailers</a>	
-					</li>
-					<li class="nav-item">
-							<a href="paginas/portal.html" class="nav-link">Fotos Da Comunidade</a>	
-					</li>
-				</ul>
-			</div>
-			<div class="" style="width: 30%; padding-top: 500px;">
-				--
-				
+			
+			<div class="container" style="width: 30%;padding: 50px;border: solid red 1px;">
+				<form action="controle.php" method="post">
+					Nome: <input type="text" name="login" value="" /><br>
+					Senha: <input type="password" name="senha" value="" />
+					<input type="submit" name="enviar" value="Login"><br>
+					<a href="cadastrar.php">Novo Cadastro</a>
+				</form>
 			</div>
 
 

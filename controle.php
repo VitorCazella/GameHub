@@ -10,11 +10,11 @@ namespace controle{
 		$usuario = $controle->verificaAcesso($login, $senha);
 
 		if($usuario[0]['id_tipo_acesso'] == 1){
-			header("Location: paginas/Pagina1.html");
+			header("Location: paginas/menu.html");
 		}if($usuario[0]['id_tipo_acesso'] == 2){
-			header("Location: paginas/Pagina2.html");
+			header("Location: paginas/menu.html");
 		}else{
-			header("Location: paginas/Pagina3.html");
+			header("Location: paginas/erro.html");
 		}
 	}elseif ($_POST['cadastrar']){
 		$login = $_POST['login'];
