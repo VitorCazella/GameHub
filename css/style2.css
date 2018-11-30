@@ -26,10 +26,15 @@ body{
 	padding: 50px;
 	border: 15px solid rgba(40,40,40,0.79);
 	border-radius: 25px;
+	background: #808080;
 }
 
 .test{
 	border: red solid 1px;
+}
+
+.bg-grey{
+	background: #808080;
 }
 
 table.login {

@@ -16,7 +16,7 @@
 
 	<body>
 		<header>
-			<div class="container-fluid" id="header1">
+		<div class="container-fluid texture-background" id="">
 				<div class="row text-white text-center" style="border-bottom: 3px solid green;">
 						<div class="col-md-1 border rounded-circle px-2 py-2 mx-4 my-4" style="background: white;">
 							<img class="rounded" src="img/white-controller.png" style="width: 103%;height: auto;" alt="">
@@ -24,31 +24,36 @@
 						<div class="col-md pl-5 py-5">
 							<h1>GameHUB</h1>
 						</div>
-						<div class="col-md-3">
-							
-						</div>
+						<div class="col-md-3"></div>
 				</div>
 			</div>
 		</header>	
 			
-			<div class="container" style="width: 30%;padding: 50px;border: solid red 1px;">
-				<div>Cadastro de Usuário</div>
+			<div id="borderMain" class="container center" style="width: 30%;padding: 50px;margin-top: 40px;margin-bottom: 40px;">
+				<div><b>Cadastro de Usuário</b></div>
 				<form action="controle.php" method="post">
-					<label>Login</label> <input type="text" name="login" value="" /><br>
-					<label>Senha</label> <input type="passoword" name="senha" value="" /><br>
-					<label>Tipo de Usuário</label>
 					<!--<select name="tipo_usuario">
 						<option value="">Selecione</option>
 						<option value="1">Usuário Comum</option>
 						<option value="2">Administrador</option>
-					</select><br>-->
+					</select>-->
+					<table class="login">
+						<tr>
+							<td>Nome:</td>
+							<td><input type="text" name="login" value="" /></td>
+						</tr>
+						<tr>
+							<td>Senha:</td>
+							<td><input type="password" name="senha" value="" /></td>
+						</tr>
+					</table>
 					<input type="submit" name="cadastrar" value="cadastrar">
 				</form>
 			</div>
 
 
 		<footer>
-			<div class="container-fluid footer text-white text-center pt-5 pb-2" id="footer1">
+			<div class="container-fluid texture-background text-white text-center pt-5 pb-2" id="">
 				<h6>Vitor Antunes Cazella</h6>
 			</div>
 		</footer>
