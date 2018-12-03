@@ -14,7 +14,7 @@ values ('Usuario Comum'),('Administrador');
 drop table if exists tb_usuario;
 create table(
 	id_usuario int(11) not null auto_increment,
-    login_usuario varchar(150) not null,
+    login_usuario varchar(150) not null unique,
     senha_usuario varchar(255) not null,
     id_tipo_acesso int(11) not null,
     constraint pk_usuario primary key (id_usuario),

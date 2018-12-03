@@ -16,7 +16,7 @@
 
 	<body>
 		<header>
-		<div class="container-fluid texture-background" id="">
+		<div class="container-fluid" id="header1">
 				<div class="row text-white text-center" style="border-bottom: 3px solid green;">
 						<div class="col-md-1 border rounded-circle px-2 py-2 mx-4 my-4" style="background: white;">
 							<img class="rounded" src="img/white-controller.png" style="width: 103%;height: auto;" alt="">
@@ -53,7 +53,7 @@
 
 
 		<footer>
-			<div class="container-fluid texture-background text-white text-center pt-5 pb-2" id="">
+			<div class="container-fluid texture-background text-white text-center pt-5 pb-2" id="footer1">
 				<h6>Vitor Antunes Cazella</h6>
 			</div>
 		</footer>

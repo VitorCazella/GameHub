@@ -18,6 +18,11 @@ include 'conexao/mysql.php';
 			$select = $this->db->select('tb_usuario', '*'," where login_usuario = '$login' and senha_usuario = '$senha'");
 			return $insert;
 		}
+
+		public function cadastraUsuario($dados){
+			$insert = $this->db->insert('tb_usuario', $dados);
+			return $insert;
+		}
 	}
 }
 ?>
