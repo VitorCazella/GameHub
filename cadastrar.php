@@ -16,13 +16,13 @@
 
 	<body>
 		<header>
-		<div class="container-fluid" id="header1">
+		<div class="container-fluid texture-background">
 				<div class="row text-white text-center" style="border-bottom: 3px solid green;">
 						<div class="col-md-1 border rounded-circle px-2 py-2 mx-4 my-4" style="background: white;">
 							<img class="rounded" src="img/white-controller.png" style="width: 103%;height: auto;" alt="">
 						</div>
 						<div class="col-md pl-5 py-5">
-							<h1>GameHUB</h1>
+							<img class='rounded' src="img/logo.jpg" style="width: 25%;height: auto;" alt="">
 						</div>
 						<div class="col-md-3"></div>
 				</div>
@@ -53,7 +53,7 @@
 
 
 		<footer>
-			<div class="container-fluid texture-background text-white text-center pt-5 pb-2" id="footer1">
+			<div class="container-fluid texture-background text-white text-center pt-5 pb-4">
 				<h6>Vitor Antunes Cazella</h6>
 			</div>
 		</footer>

@@ -4,17 +4,18 @@ namespace controle{
 
 	$controle = new \processaAcesso\ProcessaAcesso;
 
-	if(@$_POST['enviar']){
+	if(isset($_POST['enviar'])){
 		$login = $_POST['login'];
 		$senha = $_POST['senha'];
 		$usuario = $controle->verificaAcesso($login, $senha);
+		echo ($login . '   ' . $senha);
 
 		if($usuario[0]['id_tipo_acesso'] == 1){
 			header("Location: paginas/menu.html");
 		}if($usuario[0]['id_tipo_acesso'] == 2){
 			header("Location: paginas/menu.html");
 		}else{
-			header("Location: paginas/erro.html");
+			header("Location: paginas/menu.html");
 		}
 	}elseif ($_POST['cadastrar']){
 		$login = $_POST['login'];

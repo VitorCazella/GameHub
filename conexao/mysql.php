@@ -1,13 +1,13 @@
 <?php
 namespace Mysql{
-	define('db_server', "127.0.0.1");
+	define('db_server', "localhost");
 	define('db_username', "root");
 	define('db_password', "cazella1998");
 	define('db_name', "acesso");
 
 	class mysql{
 		var $db, $conn;
-
+		
 		public function __construct($server, $database, $username, $password){
 			$this->conn = @mysql_connect($server, $username, $password);
 			$this->db = @mysql_select_db($database, $this->conn);

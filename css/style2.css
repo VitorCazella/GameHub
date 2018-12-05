@@ -29,8 +29,6 @@ body{
 	background: #808080;
 }
 
-
-
 .test{
 	border: red solid 1px;
 }
@@ -52,7 +50,6 @@ table.login {
 
 
 .texture-background {
-	/*
 	-webkit-box-sizing: content-box;
 	-moz-box-sizing: content-box;
 	box-sizing: content-box;
@@ -71,6 +68,4 @@ table.login {
 	background-clip: border-box;
 	-webkit-background-size: 20px 20px;
 	background-size: 20px 20px;
-	*/
-	border: red solid 1px;
 }

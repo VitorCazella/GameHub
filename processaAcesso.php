@@ -15,12 +15,12 @@ include 'conexao/mysql.php';
 		}
 
 		public function verificaAcesso($login, $senha){
-			$select = $this->db->select('tb_usuario', '*'," where login_usuario = '$login' and senha_usuario = '$senha'");
-			return $insert;
+			$select = $this->db->select('acesso.tb_usuario', '*'," where login_usuario = '$login' and senha_usuario = '$senha'");
+			return $select;
 		}
 
 		public function cadastraUsuario($dados){
-			$insert = $this->db->insert('tb_usuario', $dados);
+			$insert = $this->db->insert('acesso.tb_usuario', $dados);
 			return $insert;
 		}
 	}
