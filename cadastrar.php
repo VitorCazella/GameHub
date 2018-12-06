@@ -29,7 +29,7 @@
 			</div>
 		</header>	
 			
-			<div id="borderMain" class="container center" style="width: 30%;padding: 50px;margin-top: 40px;margin-bottom: 40px;">
+			<div id="borderMain" class="container center text-white" style="width: 30%;padding: 50px;margin-top: 40px;margin-bottom: 40px;">
 				<div><b>Cadastro de Usuário</b></div>
 				<form action="controle.php" method="post">
 					<!--<select name="tipo_usuario">

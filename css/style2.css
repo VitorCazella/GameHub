@@ -21,21 +21,18 @@ body{
 }
 
 #borderMain {
-	width: 40%;
-	text-align: center;
 	padding: 50px;
-	border: 15px solid rgba(40,40,40,0.79);
+	border: 8px solid #808080;
 	border-radius: 25px;
-	background: #808080;
+	background: rgba(40,40,40,0.79);
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
 .test{
 	border: red solid 1px;
 }
 
-.bg-grey{
-	background: #808080;
-}
 
 table.login {
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;

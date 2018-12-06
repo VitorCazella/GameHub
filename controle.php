@@ -6,18 +6,19 @@ namespace controle{
 
 	if(isset($_POST['enviar'])){
 		$login = $_POST['login'];
-		$senha = $_POST['senha'];
+		$senha = md5($_POST['senha']);
 		$usuario = $controle->verificaAcesso($login, $senha);
-		echo ($login . '   ' . $senha);
 
+		
 		if($usuario[0]['id_tipo_acesso'] == 1){
 			header("Location: paginas/menu.html");
-		}if($usuario[0]['id_tipo_acesso'] == 2){
+		}else if($usuario[0]['id_tipo_acesso'] == 2){
 			header("Location: paginas/menu.html");
-		}else{
-			header("Location: paginas/menu.html");
+		}else{				
+			header("Location: erro.html");
 		}
-	}elseif ($_POST['cadastrar']){
+
+	}elseif (isset($_POST['cadastrar'])){
 		$login = $_POST['login'];
 		$senha = md5($_POST['senha']);
 		$tipo_usuario = 1;
